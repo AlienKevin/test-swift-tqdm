@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "name": "Debug test-swift-tqdm",
+            "program": "${workspaceFolder:test-swift-tqdm}/.build/debug/test-swift-tqdm",
+            "args": [],
+            "cwd": "${workspaceFolder:test-swift-tqdm}",
+            "preLaunchTask": "swift: Build Debug test-swift-tqdm"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "name": "Release test-swift-tqdm",
+            "program": "${workspaceFolder:test-swift-tqdm}/.build/release/test-swift-tqdm",
+            "args": [],
+            "cwd": "${workspaceFolder:test-swift-tqdm}",
+            "preLaunchTask": "swift: Build Release test-swift-tqdm"
+        }
+    ]
+}
